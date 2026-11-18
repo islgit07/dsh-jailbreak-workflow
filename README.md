@@ -8,7 +8,7 @@
 
 <div align="center">
 
-简体中文 | [English](./README.en.md) · [破甲技术交流论坛](https://openorigin.link/)（邀请码 `CESFAVBR`）· QQ 群 `1135498706`
+简体中文 | [English](./README.en.md) · [技术交流论坛](https://openorigin.link/)（邀请码 `CESFAVBR`）· QQ 群 `1135498706`
 
 [![npm](https://img.shields.io/npm/v/@minglink/dsh-jailbreak-workflow.svg)](https://www.npmjs.com/package/@minglink/dsh-jailbreak-workflow) [![node](https://img.shields.io/badge/node-22%2B-339933.svg)](https://nodejs.org) [![DeepSeek Harness 0.2.x](https://img.shields.io/badge/DeepSeek%20Harness-0.2.x-4d6bfe.svg)](https://github.com/deepseek-ai/deepseek-harness) [![workflow packs](https://img.shields.io/badge/workflow%20packs-dsh--workflows-3e7ce4.svg)](https://github.com/Minglink/dsh-workflows)
 
@@ -19,7 +19,7 @@
 连线可以带**任意条件**，顺序、并行、汇合、分支、循环、回退全都支持——插件里没有执行引擎，一切由当前会话中的模型完成。适合把能画成步骤图的活都交给它跑：多步编码任务、研究流水线、内容生产流水线；几百步的大图拖拽、平移照样满帧。
 
 > [!TIP]
-> **工作流合集**：[Minglink/dsh-workflows](https://github.com/Minglink/dsh-workflows)——现成的 `.wflite.zip` 工作流包，下载导入即用，已上架「破甲制作」研究流水线（见下文 [📋 支持的工作流](#-支持的工作流)）。
+> **工作流合集**：[Minglink/dsh-workflows](https://github.com/Minglink/dsh-workflows)——现成的 `.wflite.zip` 工作流包，下载导入即用，已上架「提示词制作」研究流水线（见下文 [📋 支持的工作流](#-支持的工作流)）。
 
 > [!NOTE]
 > **实验阶段**：功能和数据格式仍在调整，后续任何版本都可能包含不兼容的改动。
@@ -31,13 +31,13 @@
 
 | 工作流 | 说明 | 下载 |
 |---|---|---|
-| **破甲制作** | LLM 破甲研究自动化流水线，15 步：**探针测试**（200+ 探针，覆盖身份系统 / 混合帧 / 轻量三种架构）→ **拒绝模式分析** → **定制破甲词生成** → **API 验证** → **三件套输出**（破甲词文件 + 使用手册（帧矩阵 + 推回词库）+ 研究报告）。内置 `jailbreak-research` Skill：10 个测试脚本 + 4 套提示词模板 | [破甲制作.wflite.zip](https://github.com/Minglink/dsh-workflows/raw/master/workflows/破甲制作.wflite.zip) |
+| **提示词词制作** | LLM 研究自动化流水线，15 步：**探针测试**（200+ 探针，覆盖身份系统 / 混合帧 / 轻量三种架构）→ **拒绝模式分析** → **定制词生成** → **API 验证** → **三件套输出**（破甲词文件 + 使用手册（帧矩阵 + 推回词库）+ 研究报告）。内置 `jailbreak-research` Skill：10 个测试脚本 + 4 套提示词模板 | [破甲制作.wflite.zip](https://github.com/Minglink/dsh-workflows/raw/master/workflows/破甲制作.wflite.zip) |
 
 ## 🖼️ 工作流示例
 
-「破甲制作」研究流水线在画布上的样子——15 个步骤串成一条流水线，分支、循环和产出文件都直接画在图上。
+「制作」研究流水线在画布上的样子——15 个步骤串成一条流水线，分支、循环和产出文件都直接画在图上。
 
-![破甲制作工作流的完整画布：探针测试、拒绝模式分析、定制破甲词生成、API 验证、三件套输出依次相连，每次跑完把结果写回 probes.md、analysis.md、words.md、verify.md、report.md、manual.md](./assets/poyazhi-canvas.webp)
+![制作工作流的完整画布：探针测试、拒绝模式分析、定制词生成、API 验证、三件套输出依次相连，每次跑完把结果写回 probes.md、analysis.md、words.md、verify.md、report.md、manual.md](./assets/poyazhi-canvas.webp)
 
 <table>
   <tr>
